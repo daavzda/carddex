@@ -99,6 +99,8 @@ export default function Home() {
   }
 
   const filtered = cards.filter(c => `${c.nome} ${c.codigo_edicao}`.toLowerCase().includes(query.toLowerCase()));
+  console.log('CARTAS RECEBIDAS:', cards);
+console.log('PRIMEIRA IMAGEM:', cards[0]?.imagem_url);
   const partialTotal = collection.reduce((sum, item) => sum + (item.cartas?.valor_referencia == null ? 0 : Number(item.cartas.valor_referencia) * item.quantidade), 0);
   const missingValues = collection.some(item => item.cartas?.valor_referencia == null);
 
