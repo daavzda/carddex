@@ -33,3 +33,13 @@ A chave anon/public é própria para uso no navegador quando as tabelas estão p
 - Valores são referências demonstrativas, não preços de mercado em tempo real.
 - Confirmação de e-mail pode estar habilitada no Supabase; nesse caso o usuário deve confirmar o endereço antes do primeiro login.
 - A publicação, as credenciais e os testes reais dependem da configuração das contas externas.
+
+## Enviar para o GitHub
+Depois de criar um repositório vazio no GitHub (sem README/licença inicial), execute dentro da pasta do projeto:
+
+```bash
+git remote add origin https://github.com/SEU-USUARIO/carddex.git
+git push -u origin main
+```
+
+Os commits locais já estão incluídos no diretório `.git`. Antes de fazer novos commits, configure sua identidade Git com `git config user.name` e `git config user.email` usando seus próprios dados.
